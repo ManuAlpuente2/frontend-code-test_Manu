@@ -1,5 +1,9 @@
 # Prueba Técnica Frontend - Manu Alpuente
 
+## Demo 🌐
+
+[frontend-code-test_Manu](https://manualpuente2.github.io/frontend-code-test_Manu/build/)
+
 ## Ejecutar la Aplicación 🚀
 
 ```
@@ -24,10 +28,6 @@ yarn start
 - Soporte para seleccionar/eliminar con teclado
 - Funcionalidad de Deshacer/Rehacer ↩️ ↪️
 - Estado persistente (guardado en almacenamiento local) 💾
-
-## Demo 🌐
-
-[frontend-code-test_Manu](https://manualpuente2.github.io/frontend-code-test_Manu/build/)
 
 ## Tecnologías Utilizadas 🛠️
 

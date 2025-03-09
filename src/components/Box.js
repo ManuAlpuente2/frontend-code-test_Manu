@@ -3,11 +3,7 @@ import { observer } from "mobx-react";
 import BoxDraggable from "./BoxDraggable";
 
 function Box(props) {
-  return (
-    <BoxDraggable {...props}>
-      <div>Box</div>
-    </BoxDraggable>
-  );
+  return <BoxDraggable {...props}></BoxDraggable>;
 }
 
 export default observer(Box);

@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+
 body,
 html,
 #root {
-  background-color: #282c34;
+  background-color: rgb(249, 248, 252);
   width: 100%;
   height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,13 +19,33 @@ html,
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
+
+.btn {
+  height: 2.5rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  background: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  box-shadow: rgba(18, 18, 18, 0.2) 0px 1px 0.25rem;
+  user-select: none;
+  overflow: hidden;
+  gap: 0.5rem;
+}
+
 .canva {
-  width: 1200px;
-  height: 675px;
-  background-color: aliceblue;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  flex: 1 1;
+  border: 0.0625rem solid rgb(199, 195, 211);
+  margin: 1rem;
 }
 
 .box {
@@ -30,15 +53,86 @@ html,
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: move;
+  user-select: none;
+}
+
+.box.selected {
+  z-index: 10;
+  border: 0 none !important;
+  outline: 4px dashed #ccc;
+  outline-offset: 2px;
 }
 
 .toolbar {
-  position: fixed;
   top: 0;
   left: 0;
   display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  z-index: 100;
+  background-color: #fff;
+  border-bottom: 0.0625rem solid rgb(199, 195, 211);
+}
+.toolbar span {
+  animation: fadeIn 0.5s ease;
+}
+.separator {
+  display: inline-block;
+  border-left: 0.0625rem solid rgb(199, 195, 211);
+  height: 2rem;
+  margin: 0 0.5rem;
+}
+.actions .separator {
+  margin: 0;
 }
 
-.toolbar span {
-  color: white;
+button {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.2s ease;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input[type="color"] {
+  height: 1.75rem;
+  width: 1.75rem;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+input[type="color"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.actions {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0.5rem;
+  gap: 1rem;
+}
+.actions button {
+  font-size: 0.9375rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 }

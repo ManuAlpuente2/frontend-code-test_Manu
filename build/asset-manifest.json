@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "./static/css/main.c99046e4.chunk.css",
+    "main.js": "./static/js/main.080dd7b0.chunk.js",
+    "main.js.map": "./static/js/main.080dd7b0.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.fb3194f4.js",
+    "runtime-main.js.map": "./static/js/runtime-main.fb3194f4.js.map",
+    "static/js/2.f1a98bd2.chunk.js": "./static/js/2.f1a98bd2.chunk.js",
+    "static/js/2.f1a98bd2.chunk.js.map": "./static/js/2.f1a98bd2.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.64f7074512eafdb76261a5228572276c.js": "./precache-manifest.64f7074512eafdb76261a5228572276c.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.c99046e4.chunk.css.map": "./static/css/main.c99046e4.chunk.css.map",
+    "static/js/2.f1a98bd2.chunk.js.LICENSE.txt": "./static/js/2.f1a98bd2.chunk.js.LICENSE.txt",
+    "static/media/add.f3fa54cb.svg": "./static/media/add.f3fa54cb.svg",
+    "static/media/color.da7c140d.svg": "./static/media/color.da7c140d.svg",
+    "static/media/redo.99d05255.svg": "./static/media/redo.99d05255.svg",
+    "static/media/remove.526be178.svg": "./static/media/remove.526be178.svg",
+    "static/media/undo.477a75f8.svg": "./static/media/undo.477a75f8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb3194f4.js",
+    "static/js/2.f1a98bd2.chunk.js",
+    "static/css/main.c99046e4.chunk.css",
+    "static/js/main.080dd7b0.chunk.js"
+  ]
+}
